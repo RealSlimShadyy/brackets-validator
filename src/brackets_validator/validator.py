@@ -20,7 +20,7 @@ def find_invalid_positions(text, pairs=ADVANCED_PAIRS):
     відкриваючі, що залишились у стеку в кінці, теж хибні.
     """
     closers = set(pairs.values())
-    stack = []  # елементи: (відкриваюча дужка, індекс)
+    stack = []  
     invalid = []
     for index, char in enumerate(text):
         if char in pairs:
